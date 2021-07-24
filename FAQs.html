@@ -1,0 +1,268 @@
+THIS IS A TEST TO SEE IF THIS PUSHES THROUGH
+<header><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></header>
+<style>
+    @font-face {
+        font-family: "ThemeFontLight";
+        src: url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c710b16e1a779ccf8314/1626457872402/Rotonto-Light.woff2') format('woff2'), url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c709b37f8a4ad70aa5d9/1626457865369/Rotonto-Light.woff') format('woff');}
+    @font-face {
+        font-family: "ThemeFontMedium";
+        src: url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c3591c25861d0ad5c8d5/1626456921519/Rotonto-Medium.woff2') format('woff2'), url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c31da1ec762ba66baaef/1626456861971/Rotonto-Medium.woff') format('woff');}
+    @font-face {
+        font-family: "ThemeFontRegular";
+        src: url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c4861c25861d0ad5d9cb/1626457222129/Rotonto-Regular.woff2') format('woff2'), url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c47d4ade5233dd0ce3bd/1626457213148/Rotonto-Regular.woff') format('woff');}
+    * {margin: 0;padding: 0;box-sizing: border-box;}
+    a {text-decoration: none!important; color: #ffffff!important; font-weight: 600!important;}
+    .accordion {width: 100%; border-bottom: solid 1px; padding: 15px 0; text-align: left; outline: none;font-size: 19px; transition: 0.2s ease all;color: #a7cecd; background: none; border-top: 0px; border-left: 0px; border-right: 0px; font-family: ThemeFontRegular;cursor: pointer;text-transform: uppercase;position: relative;}
+    .active{color: #bd8b97;}
+    .accordion:hover {color: #ffffff;}
+    .bar {display: block; width: 40px; height: 3px; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; background-color:#a7cecd;}
+    body {max-width: 100%!important;overflow-x: hidden!important;background: #000000;color: #ffffff;}
+    .BookBtn {font-family: ThemeFontMedium;font-size: 27px; text-transform: uppercase;background-color: #a7cecd; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center;border-radius: 100%;transition: all 0.3s; position: fixed; top: 30px; right: 50px;z-index: 101;text-align: center; line-height: 1;color: #000000;}
+    .BookBtn:hover {background-color: #bd8b97;}
+    .Content {margin: 100px auto; width: 75%; line-height: 1.1;}
+    .content-wrapper {padding: 0!important;max-width: 100%!important;color: #ffffff!important;}
+    .fa {padding: 20px; text-align: center; margin: 5px 2px; font-size: 25px; width: 50px; background: none; color: #ffffff;transition: 0.3s all ease;}
+    .fa:hover {color: #bd8b97;}
+    .FAQS {margin-bottom: 100px;}
+    .FooterNew {display: grid; grid-template-columns: 20% 60% 20%; place-items: center;color: #ffffff;font-size: 18px;margin-bottom: 35px;}
+    .FooterNew div {width: 100%; text-align: center; vertical-align: middle;}
+    .FooterNew .Menu ul {margin: 0 auto; padding: 0;text-align: right;}
+    .FooterNew .Menu ul li {list-style: none; display: inline-block; text-transform: uppercase; margin: 0 10px;font-weight: 600;transition: all 0.3s;}
+    .FooterNew .Menu ul li:hover {color: #a7cecd;}
+    .Green {color: #a7cecd;}
+    .hamburger {display: block; cursor: pointer;z-index: 1;}
+    .hamburger.active .bar:nth-child(2) {opacity: 0;}
+    .hamburger.active .bar:nth-child(1) {transform: translateY(11px) rotate(45deg); background-color:#bd8b97;}
+    .hamburger.active .bar:nth-child(3) {transform: translateY(-11px) rotate(-45deg);background-color:#bd8b97;}
+    header {display: none;}
+    h1, h2, h3 {margin: 0 0 0px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
+    h4 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #ffffff!important;}
+    .Left, .Right {width: 50%; display: inline-block; vertical-align: top;}
+    .Left {padding: 30px 20px 30px 0;}
+    li {list-style: none;}
+    p {color: #ffffff;}
+    .PageTitle {font-family: ThemeFontMedium; text-transform: uppercase; color: #ffffff; font-size: 45px; margin-bottom: 30px;}
+    .panel {padding: 18px; display: none; background-color: none; overflow: hidden; margin-bottom: 30px; font-size: 17px;}
+    .Pink, .Review span {color: #bd8b97;}
+    .Pricing {width: 900px; height: auto;margin: 0 auto;}
+    .Mobile {display: none;}
+    .navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem;position: fixed;position: relative; z-index: 999;}
+    .nav-item {margin: 0; padding: .65rem 0;border-bottom: solid 2px #a7cecd;width: 100%;}
+    .nav-item:nth-child(1) {border-top: solid 2px #a7cecd;}
+    .nav-link {font-size: 1.6rem; font-weight: 400; color: #ffffff; font-family: ThemeFontMedium;text-transform: uppercase;transition: all 0.3s;}
+    .nav-link:hover {color: #bd8b97!important;}
+    .nav-menu {display: flex; justify-content: space-between; align-items: center;position: fixed; left: 20px; top: -101vh; flex-direction: column; width: 200px; text-align: center; transition: 0.3s;}
+    .nav-menu.active {top: 5rem;}
+    .nav-menu.active:before {content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #bd8b97; opacity: 1;z-index: -1; }
+    .Navigation {position: fixed;z-index: 999;top: 0;}
+    .Review {font-family: ThemeFontLight; line-height: 1.1;text-align: left; margin-bottom: 30px;}
+    .Review img {display: block;margin-top: 10px;height:30px; width: auto;}
+    .Right {padding: 30px 0 30px 20px;}
+    .section-background {background-image: url(https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1ba531a356b5f8f26fcc8/1626454611323/PageBG.jpg)!important; background-size: cover!important; background-position: top center!important;text-align: center!important;background-attachment: fixed!important;}
+    .SignUp {margin: 20px auto 70px; width: 100%;text-align: center; font-size: 20px;padding: 30px 0;position: relative; z-index: 100;line-height: 1;}
+    .SignUp::after {position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: #bd8b97;opacity: .4;content: "";z-index: -1;}
+    .SignUp form {margin-top: 30px;}
+    .SignUp form input, .SignUp form input:focus {width: 220px; background: none; color: #a7cecd; border-bottom: 1px solid #a7cecd; border-top: 0px; border-left: 0px; border-right: 0px; font-size: 27px; padding: 15px; line-height: 1;font-family: ThemeFontLight;margin: 0 10px;}
+    .SignUp form input::placeholder {color: #a7cecd;}
+    .SignUp form input[type=submit] {width: fit-content; color: #ffffff; background: #bd8b97; border: 1px solid #bd8b97; text-transform: uppercase; }
+    .SwampLogo img {width: 200px;}
+    .Tablet {display: none;}
+    @media (max-width:1625px) {
+        .BookBtn {font-size: 23px; width: 125px; height: 125px;}
+    }
+    @media (max-width:1300px) {
+        .BookBtn {right: 50px;font-size: 21px; width: 110px; height: 110px;}
+        .SignUp form input {font-size: 23px; width: 180px;}
+        .SwampLogo img {width: 150px;}
+    }
+    @media (max-width:1100px) {
+        .Content {margin: 132px auto 100px;}
+    }
+    @media (max-width: 1050px) and (orientation: landscape) {
+        
+    }
+    @media (max-width:900px) {
+        .Content {margin: 65px auto 100px;}
+        .Desktop {display: none;}
+        .Left {left: 0;}
+        .Right {right: 0;}
+    }
+    @media (max-width: 850px) and (orientation: landscape) {
+        .BookBtn {width: 75px; height: 75px; font-size: 15px; top: 10px; right: 26px;}
+        .fa {font-size: 20x;padding: 2px; margin: 5px -6px;}
+        .FooterNew {font-size: 16px;}
+        .nav-item {width: 75%; margin: 0 auto;}
+        .nav-item:nth-child(2) {border-top: #bd8b97 solid 2px; border-bottom: #bd8b97 solid 2px;}
+        .nav-menu {background-color: #a7cecd; width: 100%; left: -7px; height: 100vh; justify-content: center}
+        .nav-menu.active {top: 0;}
+        .Navigation {top: 0;}
+        .SignUp {font-size: 14px;padding: 30px 15px;}
+        .SignUp form input {font-size: 18px; width: 155px;padding: 9px;}
+        .SignUp form input[type=submit] {display: block; margin: 20px auto 0px;}
+}
+    @media (max-width:750px) {
+        .BookBtn {right: 22px;font-size: 15px; width: 80px; height: 80px;top: 15px;}
+        .Content {margin: 75px auto 100px; width: 90%;}
+        .fa {margin: -12px 2px;}
+        .Left, .Right {width: 100%;}
+        .nav-item {width: 75%; margin: 0 auto;}
+        .nav-item:nth-child(2) {border-top: #bd8b97 solid 2px; border-bottom: #bd8b97 solid 2px;}
+        .nav-menu {background-color: #a7cecd; width: 100%; left: -7px; height: 100vh; justify-content: center}
+        .nav-menu.active {top: 0;}
+        .SignUp {font-size: 16px;padding: 30px 15px;}
+        .SignUp form input {font-size: 18px; width: 155px;padding: 9px;}
+        .SignUp form input[type=submit] {display: block; margin: 20px auto 0px;}
+    }
+    @media (max-width:600px) {
+        .BookBtn {right: 18px; font-size: 12px; width: 70px; height: 70px; top: 6px;}
+        .Content {margin: 38px auto 60px;}
+        .FooterNew {display: block;}
+        .FooterNew div {width: 100%; margin: 10px auto; text-align: center;}
+        .Mobile {display: block!important;}
+        .navbar {padding: 0.5rem;}
+        .Review br {content: "";}
+        .Review br:after {content: " ";}
+        .SwampLogo {display: none;}
+        .Tablet {background-size: auto 75vh; padding-top: 63vh;}
+    }
+    @media (max-width: 600px) and (orientation: landscape) {
+        .bar {width: 30px; height: 2px;}
+        .BookBtn {width: 70px; height: 70px; font-size: 13px;}
+    }
+    @media (max-width:450px) {
+        .bar {background-color: #000000; width: 29px; height: 2px; margin: 6px auto;}
+        .BookBtn {left: 0; top: 0; width: 100%; border-radius: 0; height: fit-content; padding: 13px; font-size: 17px;}
+        .hamburger.active .bar:nth-child(1) {transform: translateY(5px) rotate(45deg);}
+        .navbar {padding: 0.5rem 1rem;}
+        .SignUp form input {width: 80%;}
+        .Social {margin: 30px auto;}
+    }
+    
+</style>
+<div class="Navigation">
+    <nav class="navbar">
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="https://www.thedropexperience.co.uk" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/faqs" class="nav-link">FAQS</a>
+                </li>
+                <li class="nav-item" style="display: none;">
+                    <a href="/reviews" class="nav-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/location" class="nav-link">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/creative" class="nav-link">Creative</a>
+                </li>
+            </ul>
+        </nav>
+</div>
+
+<a href="/tickets"><div class="BookBtn">Book Tickets</div></a>
+<div class="Content">
+    <div class="PageTitle">FAQS</div>
+    <div class="FAQS">
+        <button class="accordion">What is The Drop?</button>
+        <div class="panel"><p>The Drop is a stand alone, live, alternate reality game in which a team of up to 6 players solve the encryptic mystery.</p></div>
+        <button class="accordion">What is it taking place?</button>
+        <div class="panel"><p>The Drop is taking place at 55 Aldgate High Street, London, EC3N 1AL. The venue is opposite Aldgate underground station. Aldgate station is on the Circle and Metropolitan lines, in Travelcard Zone 1.</p></div>
+        <button class="accordion">Is it accessible?</button>
+        <div class="panel"><p>For an accessible experience, please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a></p></div>
+        <button class="accordion">How long is the experience?</button>
+        <div class="panel"><p>Please allow 1 hour from the time you enter the building</p></div>
+        <button class="accordion">Is there a cloakroom?</button>
+        <div class="panel"><p>No - we don't have a cloakroom and can't story any bags or luggage. Only personal bags, such as small backpacks or handbags can be brought with you. We will be operating a one way system, so the way you exit will be different to the way you enter. There will be on readmittance onve your experience has started.</p></div>
+        <button class="accordion">Is it COVID safe?</button>
+        <div class="panel"><p>We require all of our customers to wear a medical mask for their safety and the safety of our staff. All attendees will be asked to complete a covid questionnaire before your experience. All surfaces will be disinfected before and after each experience. If you are not feeling well, help keep everyone safe by staying at home - you can rebook your slot to a time of your choosing.</p></div>
+        <button class="accordion">How many people should I have in my team?</button>
+        <div class="panel"><p>We have created the experience for teams of between 2-6.</p></div>
+        <button class="accordion">Can I book a ticket for more than 6 people?</button>
+        <div class="panel"><p>You can have up to 6 people in each experience, however you are able to book multiple experiences to begin at similar times. Please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a> for more information.</p></div>
+        <button class="accordion">How much does a ticket cost?</button>
+        <div class="panel" style="text-align: center;"><img class="Pricing" src="https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60fb0e5640a27c171c08e121/1627065942845/Prices.png"></div>
+        <button class="accordion">How do I book a ticket?</button>
+        <div class="panel"><p>Head over to our website and click the 'book tickets' button. Then, choose the number of people you'll have in your team, the time you'd like to play, and the date that works for you. After that, you will be asked to fill out your details and confirm your booking. Need to swap the date or time? No problem! Up to 48 hours before your planned session, you can reschedule your time or date using the 'reschedule' button on the email confirmation you are sent immediately after booking. We also sell gift vouchers at a variety of prices, which you can use to pay for your session, or gift to friends and family.</p></div>
+        <button class="accordion">Can I cancel my booking?</button>
+        <div class="panel"><p>Unfortunately, all bookings are final and we cannot offer refunds or cancellations. However, you are able to exchange your session to a different date or time using the 'reschedule' button on the confirmation email. This is subject to availability, and providing the request is made at least 48 hours in advance of the session you have booked.</p></div>
+        <button class="accordion">I'm running late, what do I do?</button>
+        <div class="panel"><p>Due to the nature of The Drop, unfortunately we have a <strong>No Latecomers</strong> policy, so you must arrive ready to begin at the time stated on your ticket. If you are late, we will not be able to refund or reschedule your booking.</p></div>
+        <button class="accordion">Will I be going through the experience with people I don't know?</button>
+        <div class="panel"><p>No, you will only be interacting with your team mates/within your bubble, and your team will be together at all times.</p></div>
+        <button class="accordion">I have an issue with my booking - who do I contact for help?</button>
+        <div class="panel"><p>Please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a></p></div>
+        <button class="accordion">What if we get stuck, will there be any help provided?</button>
+        <div class="panel"><p>Yes, there will always be a member of staff to provide assistance when needed.</p></div>
+        <button class="accordion">What's the recommended age range?</button>
+        <div class="panel"><p>We recommend that players are over the age of 14. The experience contains confined spaces and explicit violence. Anyone under the age of 18 needs to be accompanied by an adult.</p></div>
+        <button class="accordion">Can I book more than one game as a team-building exercise / for my office party / for an office away day?</button>
+        <div class="panel"><p>Yes, you can. Please contact <a href="mailto:groups@swampmotel.co.uk">groups@swampmotel.co.uk</a> for more information.</p></div>
+        
+    </div>
+</div>
+    
+    
+
+<div class="SignUp">
+    Sign up to our mailing list to be the first to hear about Swamp Motel games and experiences, offers, and more
+    <!-- Begin Mailchimp Signup Form -->
+<form action="https://swampmotel.us19.list-manage.com/subscribe/post?u=048a26927edde2aafab94f3d8&amp;id=bde837d9ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mce-responses">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_048a26927edde2aafab94f3d8_bde837d9ab" tabindex="-1" value=""></div>
+    <div id="mc_embed_signup_scroll">
+        <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+        <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email Address">
+        <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" >
+    </div>
+</form>
+
+<!--End mc_embed_signup-->
+</div>
+<div class="FooterNew"><div class="SwampLogo"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+    <div class="Menu"><ul><a href="/corporate"><li>Corporate</li></a><a href="/privacy-policy"><li>Privacy Policy</li></a><a href="media"><li>Media Enquiries</li></a></ul></div>
+    <div class="Social"><a href="https://twitter.com/swampmotel" class="fa fa-twitter"></a><a href="https://www.instagram.com/swamp_motel/" class="fa fa-instagram"></a><a href="https://www.facebook.com/swampmotellondon/" class="fa fa-facebook"></a></div><div class="SwampLogo Mobile"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+</div>
+<script>const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}</script>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
