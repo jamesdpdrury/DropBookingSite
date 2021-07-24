@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Medium.eot');
+    src: url('Rotonto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Medium.woff2') format('woff2'),
+        url('Rotonto-Medium.woff') format('woff'),
+        url('Rotonto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Light.eot');
+    src: url('Rotonto-Light.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Light.woff2') format('woff2'),
+        url('Rotonto-Light.woff') format('woff'),
+        url('Rotonto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-BlackItalic.eot');
+    src: url('Rotonto-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-BlackItalic.woff2') format('woff2'),
+        url('Rotonto-BlackItalic.woff') format('woff'),
+        url('Rotonto-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-LightItalic.eot');
+    src: url('Rotonto-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-LightItalic.woff2') format('woff2'),
+        url('Rotonto-LightItalic.woff') format('woff'),
+        url('Rotonto-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-BoldItalic.eot');
+    src: url('Rotonto-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-BoldItalic.woff2') format('woff2'),
+        url('Rotonto-BoldItalic.woff') format('woff'),
+        url('Rotonto-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Regularitalic.eot');
+    src: url('Rotonto-Regularitalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Regularitalic.woff2') format('woff2'),
+        url('Rotonto-Regularitalic.woff') format('woff'),
+        url('Rotonto-Regularitalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Heavy.eot');
+    src: url('Rotonto-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Heavy.woff2') format('woff2'),
+        url('Rotonto-Heavy.woff') format('woff'),
+        url('Rotonto-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Regular.eot');
+    src: url('Rotonto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Regular.woff2') format('woff2'),
+        url('Rotonto-Regular.woff') format('woff'),
+        url('Rotonto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-SemiboldItalic.eot');
+    src: url('Rotonto-SemiboldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-SemiboldItalic.woff2') format('woff2'),
+        url('Rotonto-SemiboldItalic.woff') format('woff'),
+        url('Rotonto-SemiboldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Bold.eot');
+    src: url('Rotonto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Bold.woff2') format('woff2'),
+        url('Rotonto-Bold.woff') format('woff'),
+        url('Rotonto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-MediumItalic.eot');
+    src: url('Rotonto-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-MediumItalic.woff2') format('woff2'),
+        url('Rotonto-MediumItalic.woff') format('woff'),
+        url('Rotonto-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Black.eot');
+    src: url('Rotonto-Black.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Black.woff2') format('woff2'),
+        url('Rotonto-Black.woff') format('woff'),
+        url('Rotonto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Heavyitalic.eot');
+    src: url('Rotonto-Heavyitalic.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Heavyitalic.woff2') format('woff2'),
+        url('Rotonto-Heavyitalic.woff') format('woff'),
+        url('Rotonto-Heavyitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rotonto';
+    src: url('Rotonto-Semibold.eot');
+    src: url('Rotonto-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('Rotonto-Semibold.woff2') format('woff2'),
+        url('Rotonto-Semibold.woff') format('woff'),
+        url('Rotonto-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
