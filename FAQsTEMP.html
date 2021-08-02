@@ -11,6 +11,9 @@
         src: url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c4861c25861d0ad5d9cb/1626457222129/Rotonto-Regular.woff2') format('woff2'), url('https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1c47d4ade5233dd0ce3bd/1626457213148/Rotonto-Regular.woff') format('woff');}
     * {margin: 0;padding: 0;box-sizing: border-box;}
     a {text-decoration: none!important; color: #ffffff!important; font-weight: 600!important;}
+    .accordion {width: 100%; border-bottom: solid 1px; padding: 15px 0; text-align: left; outline: none;font-size: 19px; transition: 0.2s ease all;color: #a7cecd; background: none; border-top: 0px; border-left: 0px; border-right: 0px; font-family: ThemeFontRegular;cursor: pointer;text-transform: uppercase;position: relative;}
+    .active{color: #bd8b97;}
+    .accordion:hover {color: #ffffff;}
     .bar {display: block; width: 40px; height: 3px; margin: 8px auto; -webkit-transition: all 0.3s ease-in-out;transition: all 0.3s ease-in-out; background-color:#a7cecd;}
     body {max-width: 100%!important;overflow-x: hidden!important;background: #000000;color: #ffffff;}
     .BookBtn {font-family: ThemeFontMedium;font-size: 27px; text-transform: uppercase;background-color: #a7cecd; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center;border-radius: 100%;transition: all 0.3s; position: fixed; top: 30px; right: 50px;z-index: 101;text-align: center; line-height: 1;color: #000000;}
@@ -19,6 +22,7 @@
     .content-wrapper {padding: 0!important;max-width: 100%!important;color: #ffffff!important;}
     .fa {padding: 20px; text-align: center; margin: 5px 2px; font-size: 25px; width: 50px; background: none; color: #ffffff;transition: 0.3s all ease;}
     .fa:hover {color: #bd8b97;}
+    .FAQS {margin-bottom: 100px;}
     .FooterNew {display: grid; grid-template-columns: 20% 60% 20%; place-items: center;color: #ffffff;font-size: 18px;margin-bottom: 35px;}
     .FooterNew div {width: 100%; text-align: center; vertical-align: middle;}
     .FooterNew .Menu ul {margin: 0 auto; padding: 0;text-align: right;}
@@ -30,13 +34,16 @@
     .hamburger.active .bar:nth-child(1) {transform: translateY(11px) rotate(45deg); background-color:#bd8b97;}
     .hamburger.active .bar:nth-child(3) {transform: translateY(-11px) rotate(-45deg);background-color:#bd8b97;}
     header {display: none;}
-    h1, h2, h3 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
+    h1, h2, h3 {margin: 0 0 0px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
     h4 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #ffffff!important;}
     .Left, .Right {width: 50%; display: inline-block; vertical-align: top;}
     .Left {padding: 30px 20px 30px 0;}
     li {list-style: none;}
+    p {color: #ffffff;}
     .PageTitle {font-family: ThemeFontMedium; text-transform: uppercase; color: #ffffff; font-size: 45px; margin-bottom: 30px;}
+    .panel {padding: 18px; display: none; background-color: none; overflow: hidden; font-size: 17px;}
     .Pink, .Review span {color: #bd8b97;}
+    .Pricing {width: 900px; height: auto;margin: 0 auto;}
     .Mobile {display: none;}
     .navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem;position: fixed;position: relative; z-index: 999;}
     .nav-item {margin: 0; padding: .65rem 0;border-bottom: solid 2px #a7cecd;width: 100%;}
@@ -149,22 +156,56 @@
                     <a href="/reviews" class="nav-link">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/location" class="nav-link">Location</a>
-                </li>
-                <li class="nav-item">
                     <a href="/creative" class="nav-link">Creative</a>
                 </li>
             </ul>
         </nav>
 </div>
 
-
+<a href="/tickets"><div class="BookBtn">Book Tickets</div></a>
 <div class="Content">
-    <div class="PageTitle">Book Tickets</div>
-    <div class="Left"><h3>Book now to experience The Drop</h3><h3>Limited tickets available from 2nd September to 14th October.</h3><h3>Prices start from £29.95 per ticket.</h3></div><div class="Right"><iframe src="https://app.squarespacescheduling.com/schedule.php?owner=23481697&location=Hopkins%20Stearne" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script></div>
+    <div class="PageTitle">FAQS</div>
+    <div class="FAQS">
+        <button class="accordion">What is The Drop?</button>
+        <div class="panel"><p>The Drop is a stand alone, live, alternate reality game in which a team of up to 6 players solve the encryptic mystery.</p></div>
+        <button class="accordion">Is it accessible?</button>
+        <div class="panel"><p>For an accessible experience, please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a></p></div>
+        <button class="accordion">How long is the experience?</button>
+        <div class="panel"><p>Please allow 1 hour from the time you enter the building</p></div>
+        <button class="accordion">Is there a cloakroom?</button>
+        <div class="panel"><p>No - we don't have a cloakroom and can't story any bags or luggage. Only personal bags, such as small backpacks or handbags can be brought with you. We will be operating a one way system, so the way you exit will be different to the way you enter. There will be on readmittance onve your experience has started.</p></div>
+        <button class="accordion">Is it COVID safe?</button>
+        <div class="panel"><p>We require all of our customers to wear a medical mask for their safety and the safety of our staff. All attendees will be asked to complete a covid questionnaire before your experience. All surfaces will be disinfected before and after each experience. If you are not feeling well, help keep everyone safe by staying at home - you can rebook your slot to a time of your choosing.</p></div>
+        <button class="accordion">How many people should I have in my team?</button>
+        <div class="panel"><p>We have created the experience for teams of between 2-6.</p></div>
+        <button class="accordion">Can I book a ticket for more than 6 people?</button>
+        <div class="panel"><p>You can have up to 6 people in each experience, however you are able to book multiple experiences to begin at similar times. Please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a> for more information.</p></div>
+        <button class="accordion">How much does a ticket cost?</button>
+        <div class="panel" style="text-align: center;"><img class="Pricing" src="https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60fb0e5640a27c171c08e121/1627065942845/Prices.png"></div>
+        <button class="accordion">How do I book a ticket?</button>
+        <div class="panel"><p>Head over to our website and click the 'book tickets' button. Then, choose the number of people you'll have in your team, the time you'd like to play, and the date that works for you. After that, you will be asked to fill out your details and confirm your booking. Need to swap the date or time? No problem! Up to 48 hours before your planned session, you can reschedule your time or date using the 'reschedule' button on the email confirmation you are sent immediately after booking. We also sell gift vouchers at a variety of prices, which you can use to pay for your session, or gift to friends and family.</p></div>
+        <button class="accordion">Can I cancel my booking?</button>
+        <div class="panel"><p>Unfortunately, all bookings are final and we cannot offer refunds or cancellations. However, you are able to exchange your session to a different date or time using the 'reschedule' button on the confirmation email. This is subject to availability, and providing the request is made at least 48 hours in advance of the session you have booked.</p></div>
+        <button class="accordion">I'm running late, what do I do?</button>
+        <div class="panel"><p>Due to the nature of The Drop, unfortunately we have a <strong>No Latecomers</strong> policy, so you must arrive ready to begin at the time stated on your ticket. If you are late, we will not be able to refund or reschedule your booking.</p></div>
+        <button class="accordion">Will I be going through the experience with people I don't know?</button>
+        <div class="panel"><p>No, you will only be interacting with your team mates/within your bubble, and your team will be together at all times.</p></div>
+        <button class="accordion">I have an issue with my booking - who do I contact for help?</button>
+        <div class="panel"><p>Please contact <a href="mailto:boxoffice@swampmotel.co.uk">boxoffice@swampmotel.co.uk</a></p></div>
+        <button class="accordion">What if we get stuck, will there be any help provided?</button>
+        <div class="panel"><p>Yes, there will always be a member of staff to provide assistance when needed.</p></div>
+        <button class="accordion">What's the recommended age range?</button>
+        <div class="panel"><p>We recommend that players are over the age of 14. The experience contains confined spaces and explicit violence. Anyone under the age of 18 needs to be accompanied by an adult.</p></div>
+        <button class="accordion">Can I book more than one game as a team-building exercise / for my office party / for an office away day?</button>
+        <div class="panel"><p>Yes, you can. Please contact <a href="mailto:groups@swampmotel.co.uk">groups@swampmotel.co.uk</a> for more information.</p></div>
+        
+    </div>
 </div>
+    
+    
+
 <div class="SignUp">
-    Sign up to our mailing list to be the first to hear about Swamp Motel games and experiences, offers, and more
+    Tickets will be limited. Sign up to be the first to hear.
     <!-- Begin Mailchimp Signup Form -->
 <form action="https://swampmotel.us19.list-manage.com/subscribe/post?u=048a26927edde2aafab94f3d8&amp;id=bde837d9ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mce-responses">
@@ -182,9 +223,9 @@
 
 <!--End mc_embed_signup-->
 </div>
-<div class="FooterNew"><div class="SwampLogo"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+<div class="FooterNew"><div class="SwampLogo"><a href="https://swampmotel.co.uk/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
     <div class="Menu"><ul><a href="/corporate"><li>Corporate</li></a><a href="/privacy-policy"><li>Privacy Policy</li></a><a href="media"><li>Media Enquiries</li></a></ul></div>
-    <div class="Social"><a href="https://twitter.com/swampmotel" class="fa fa-twitter"></a><a href="https://www.instagram.com/swamp_motel/" class="fa fa-instagram"></a><a href="https://www.facebook.com/swampmotellondon/" class="fa fa-facebook"></a></div><div class="SwampLogo Mobile"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+    <div class="Social"><a href="https://twitter.com/swampmotel" class="fa fa-twitter" target="_blank"></a><a href="https://www.instagram.com/swamp_motel/" target="_blank" class="fa fa-instagram"></a><a href="https://www.facebook.com/swampmotellondon/" target="_blank" class="fa fa-facebook"></a></div><div class="SwampLogo Mobile"><a href="https://swampmotel.co.uk/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
 </div>
 <script>const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
@@ -203,3 +244,36 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }</script>
+<script>const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}</script>
+    <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

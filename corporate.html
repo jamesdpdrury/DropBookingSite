@@ -15,8 +15,9 @@
     body {max-width: 100%!important;overflow-x: hidden!important;background: #000000;color: #ffffff;}
     .BookBtn {font-family: ThemeFontMedium;font-size: 27px; text-transform: uppercase;background-color: #a7cecd; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center;border-radius: 100%;transition: all 0.3s; position: fixed; top: 30px; right: 50px;z-index: 101;text-align: center; line-height: 1;color: #000000;}
     .BookBtn:hover {background-color: #bd8b97;}
-    .Content {margin: 100px auto; width: 75%; line-height: 1.1;}
+    .Content {margin: 100px auto; width: 75%; line-height: 1.1;text-align: center;}
     .content-wrapper {padding: 0!important;max-width: 100%!important;color: #ffffff!important;}
+    .description {margin: 0 10px; color: #fff!important;}
     .fa {padding: 20px; text-align: center; margin: 5px 2px; font-size: 25px; width: 50px; background: none; color: #ffffff;transition: 0.3s all ease;}
     .fa:hover {color: #bd8b97;}
     .FooterNew {display: grid; grid-template-columns: 20% 60% 20%; place-items: center;color: #ffffff;font-size: 18px;margin-bottom: 35px;}
@@ -30,11 +31,17 @@
     .hamburger.active .bar:nth-child(1) {transform: translateY(11px) rotate(45deg); background-color:#bd8b97;}
     .hamburger.active .bar:nth-child(3) {transform: translateY(-11px) rotate(-45deg);background-color:#bd8b97;}
     header {display: none;}
-    h1, h2, h3 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
+    h1, h2, h3 {margin: 0 0 30px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
     h4 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #ffffff!important;}
+    input, input:focus, select, select:focus {background: none!important; color: #a7cecd!important; border-bottom: 1px solid #a7cecd!important; border-top: 0px!important; border-left: 0px!important; border-right: 0px!important; font-size: 17px!important; padding: 15px!important; line-height: 1!important;font-family: ThemeFontLight!important;margin: 0 10px!important;}
+    input::placeholder {color: #a7cecd!important;}
+    input[type=submit] {width: fit-content!important; color: #ffffff!important; background: #bd8b97!important; border: 1px solid #bd8b97!important; text-transform: uppercase!important; }
+    .SwampLogo img {width: 200px;}
+    label {display: none!important;}
     .Left, .Right {width: 50%; display: inline-block; vertical-align: top;}
     .Left {padding: 30px 20px 30px 0;}
     li {list-style: none;}
+    p {color: #ffffff;}
     .PageTitle {font-family: ThemeFontMedium; text-transform: uppercase; color: #ffffff; font-size: 45px; margin-bottom: 30px;}
     .Pink, .Review span {color: #bd8b97;}
     .Mobile {display: none;}
@@ -54,11 +61,13 @@
     .SignUp {margin: 20px auto 70px; width: 100%;text-align: center; font-size: 20px;padding: 30px 10px;position: relative; z-index: 100;line-height: 1;}
     .SignUp::after {position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: #bd8b97;opacity: .4;content: "";z-index: -1;}
     .SignUp form {margin-top: 30px;}
-    .SignUp form input, .SignUp form input:focus {width: 220px; background: none; color: #a7cecd; border-bottom: 1px solid #a7cecd; border-top: 0px; border-left: 0px; border-right: 0px; font-size: 27px; padding: 15px; line-height: 1;font-family: ThemeFontLight;margin: 0 10px;}
+    .SignUp form input, .SignUp form input:focus{width: 220px; background: none; color: #a7cecd; border-bottom: 1px solid #a7cecd; border-top: 0px; border-left: 0px; border-right: 0px; font-size: 27px; padding: 15px; line-height: 1;font-family: ThemeFontLight;margin: 0 10px;}
     .SignUp form input::placeholder {color: #a7cecd;}
     .SignUp form input[type=submit] {width: fit-content; color: #ffffff; background: #bd8b97; border: 1px solid #bd8b97; text-transform: uppercase; }
     .SwampLogo img {width: 200px;}
     .Tablet {display: none;}
+    textarea, textarea:focus {background: none!important; color: #a7cecd!important; border: 1px solid #a7cecd!important; font-size: 17px!important; padding: 15px!important; line-height: 1!important;font-family: ThemeFontLight!important;margin: 0 10px!important; border-radius: 0!important;}
+    textarea::placeholder {color: #a7cecd!important;}
     @media (max-width:1625px) {
         .BookBtn {font-size: 23px; width: 125px; height: 125px;}
     }
@@ -92,6 +101,10 @@
         .SignUp form input {font-size: 18px; width: 155px;padding: 9px;}
         .SignUp form input[type=submit] {display: block; margin: 20px auto 0px;}
 }
+    @media (max-width:767px) { 
+        .sqs-col-6 {width: 90%!important; margin: 0 auto;padding: 0 5%;}
+    }
+        
     @media (max-width:750px) {
         .BookBtn {right: 22px;font-size: 15px; width: 80px; height: 80px;top: 15px;}
         .Content {margin: 75px auto 100px; width: 90%;}
@@ -158,11 +171,24 @@
         </nav>
 </div>
 
-
-<div class="Content">
-    <div class="PageTitle">Book Tickets</div>
-    <div class="Left"><h3>Book now to experience The Drop</h3><h3>Limited tickets available from 2nd September to 14th October.</h3><h3>Prices start from £29.95 per ticket.</h3></div><div class="Right"><iframe src="https://app.squarespacescheduling.com/schedule.php?owner=23481697&location=Hopkins%20Stearne" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script></div>
+<a href="/tickets"><div class="BookBtn">Book Tickets</div></a>
+<div class="Content"> 
+    <div class="PageTitle">Corporate &amp; Private Hire</div>
+    <h3>CENTRAL LONDON LOCATION, HEART-RACING FUN</h3>
+    <p>Organising an office away day, team building experience extraordinaire, or hen/stag party? Or a special birthday or anniversary?</p>
+    <p>This interactive experience offers you the chance to team up and enter an underworld of crime. Descend into the dark underbelly of modern day espionage to lift the lid on a centuries old secret.</p>
+    <p>If you're a fan of <i>Inception</i>, <i>Tenet</i> or <i>Ocean's 11</i>, or if you've ever wanted to step into the world of a thriller, this is for you.</p>
+    <p>Becoming immersed in a heart-racing adventure, you and your team take on a leading role in the narrative as events unfold, working together to discover secrets and uncover the truth. Crack codes, solve puzzles, and be prepared for one moment that changes everything.</p>
+    <p>We can build custom packages to suit every budget - get in touch to find out how we can make your event memorable.</p>
 </div>
+    
+    
+    
+    
+    
+    
+    
+
 <div class="SignUp">
     Sign up to our mailing list to be the first to hear about Swamp Motel games and experiences, offers, and more
     <!-- Begin Mailchimp Signup Form -->

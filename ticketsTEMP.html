@@ -15,7 +15,7 @@
     body {max-width: 100%!important;overflow-x: hidden!important;background: #000000;color: #ffffff;}
     .BookBtn {font-family: ThemeFontMedium;font-size: 27px; text-transform: uppercase;background-color: #a7cecd; width: 150px; height: 150px; display: flex; justify-content: center; align-items: center;border-radius: 100%;transition: all 0.3s; position: fixed; top: 30px; right: 50px;z-index: 101;text-align: center; line-height: 1;color: #000000;}
     .BookBtn:hover {background-color: #bd8b97;}
-    .Content {margin: 100px auto; width: 75%; line-height: 1.1;}
+    .Content {margin: 0px auto 100px; width: 75%; line-height: 1.1;text-align: center!important;}
     .content-wrapper {padding: 0!important;max-width: 100%!important;color: #ffffff!important;}
     .fa {padding: 20px; text-align: center; margin: 5px 2px; font-size: 25px; width: 50px; background: none; color: #ffffff;transition: 0.3s all ease;}
     .fa:hover {color: #bd8b97;}
@@ -25,21 +25,26 @@
     .FooterNew .Menu ul li {list-style: none; display: inline-block; text-transform: uppercase; margin: 0 10px;font-weight: 600;transition: all 0.3s;}
     .FooterNew .Menu ul li:hover {color: #a7cecd;}
     .Green {color: #a7cecd;}
+    h1, h2, h3 {margin: 0 0 10px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
+    h4 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #ffffff!important;}
     .hamburger {display: block; cursor: pointer;z-index: 1;}
     .hamburger.active .bar:nth-child(2) {opacity: 0;}
-    .hamburger.active .bar:nth-child(1) {transform: translateY(11px) rotate(45deg); background-color:#bd8b97;}
+    .hamburger.active .bar:nth-child(1) {transform: translateY(11px) rotate(45deg); background-color:#bd8b97; }
     .hamburger.active .bar:nth-child(3) {transform: translateY(-11px) rotate(-45deg);background-color:#bd8b97;}
     header {display: none;}
-    h1, h2, h3 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #bd8b97!important;}
-    h4 {margin: 0 0 40px; line-height: 1.2; font-family: ThemeFontMedium!important; color: #ffffff!important;}
-    .Left, .Right {width: 50%; display: inline-block; vertical-align: top;}
-    .Left {padding: 30px 20px 30px 0;}
+    .Home {display: grid; grid-template-columns: 1fr 33.33% 1fr; place-items: center;background-image: url(https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1be963e8f8509e751be7b/1626455703633/Logo.png); background-repeat: no-repeat; background-position: top center;position: relative; top: -10px;height: 83vh; background-size: contain;width: 95%; margin: 0 auto;max-width: 1800px;}
+    .HomeDates {position: absolute!important;bottom: 30px;font-family: ThemeFontMedium;text-align: center;font-size: 23px;line-height: 1.4;left: 50%; transform: translateX(-50%);width: 100%;}
+    .HomeReview {font-family: ThemeFontLight; line-height: 1.1;text-align: center;font-size: 18px;position: absolute!important; bottom: 22vh;width: 100%;}
+    .HomeReview img {display: block;margin: 10px auto 0;height:40px; width: auto;}
+    .Home div {vertical-align: middle;position: relative;}
+    input, input:focus, select, select:focus {background: none!important; color: #a7cecd!important; border-bottom: 1px solid #a7cecd!important; border-top: 0px!important; border-left: 0px!important; border-right: 0px!important; font-size: 17px!important; padding: 15px!important; line-height: 1!important;font-family: ThemeFontLight!important;margin: 0 10px!important;}
+    input::placeholder {color: #a7cecd!important;}
+    input[type=submit] {width: fit-content!important; color: #ffffff!important; background: #bd8b97!important; border: 1px solid #bd8b97!important; text-transform: uppercase!important; }
     li {list-style: none;}
-    .PageTitle {font-family: ThemeFontMedium; text-transform: uppercase; color: #ffffff; font-size: 45px; margin-bottom: 30px;}
-    .Pink, .Review span {color: #bd8b97;}
+    .Pink, .HomeReview span {color: #bd8b97;}
     .Mobile {display: none;}
     .navbar {display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem;position: fixed;position: relative; z-index: 999;}
-    .nav-item {margin: 0; padding: .65rem 0;border-bottom: solid 2px #a7cecd;width: 100%;}
+    .nav-item {margin: 0; padding: .65rem 0;border-bottom: solid 2px #a7cecd; width: 100%;}
     .nav-item:nth-child(1) {border-top: solid 2px #a7cecd;}
     .nav-link {font-size: 1.6rem; font-weight: 400; color: #ffffff; font-family: ThemeFontMedium;text-transform: uppercase;transition: all 0.3s;}
     .nav-link:hover {color: #000000!important;}
@@ -47,42 +52,66 @@
     .nav-menu.active {top: 5rem;}
     .nav-menu.active:before {content: " "; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: #bd8b97; opacity: 1;z-index: -1; }
     .Navigation {position: fixed;z-index: 999;top: 0;}
-    .Review {font-family: ThemeFontLight; line-height: 1.1;text-align: left; margin-bottom: 30px;}
-    .Review img {display: block;margin-top: 10px;height:30px; width: auto;}
-    .Right {padding: 30px 0 30px 20px;}
-    .section-background {background-image: url(https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1ba531a356b5f8f26fcc8/1626454611323/PageBG.jpg)!important; background-size: cover!important; background-position: top center!important;text-align: center!important;background-attachment: fixed!important;}
+    .section-background {background-image: url(https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60f1ba4c8facf016d5368d0d/1626454605147/HomeBG.jpg)!important; background-size: cover!important; background-position: top center!important;text-align: center!important;background-attachment: fixed!important;}
     .SignUp {margin: 20px auto 70px; width: 100%;text-align: center; font-size: 20px;padding: 30px 10px;position: relative; z-index: 100;line-height: 1;}
     .SignUp::after {position: absolute;top: 0;left: 0;bottom: 0;right: 0;background-color: #bd8b97;opacity: .4;content: "";z-index: -1;}
     .SignUp form {margin-top: 30px;}
     .SignUp form input, .SignUp form input:focus {width: 220px; background: none; color: #a7cecd; border-bottom: 1px solid #a7cecd; border-top: 0px; border-left: 0px; border-right: 0px; font-size: 27px; padding: 15px; line-height: 1;font-family: ThemeFontLight;margin: 0 10px;}
     .SignUp form input::placeholder {color: #a7cecd;}
-    .SignUp form input[type=submit] {width: fit-content; color: #ffffff; background: #bd8b97; border: 1px solid #bd8b97; text-transform: uppercase; }
+    .SignUp form input[type=submit] {width: fit-content; color: #ffffff; background: #bd8b97; border: 1px solid #bd8b97; text-transform: uppercase; margin-top: 20px; }
+    .SwampLive {margin: 0 auto;width: 620px;position: absolute;top: 4%; left: 50%; transform: translate(-50%, 0%);}
     .SwampLogo img {width: 200px;}
     .Tablet {display: none;}
+    .Tag {font-family: ThemeFontLight; text-transform: uppercase; line-height: 1.2;text-align: center;font-size: 40px;height: 100vh;display: flex; justify-content: center; align-items: center;}
+    .TrailerBox {position: relative;color: #ffffff;width: 75%; padding-bottom: 42.20%; margin: 50px 12.5% 150px; height: 0; display: inline-block; vertical-align: middle;-webkit-box-shadow: -5px -5px 16px 6px #A7CECD, 5px 5px 16px 6px #BD8B97; box-shadow: -5px -5px 16px 6px #A7CECD, 5px 5px 16px 6px #BD8B97;display: flex; justify-content: center; align-items: center;background: #000000;}
+    .TrailerBox span{ text-transform: uppercase; font-size: 50px; font-family: ThemeFontLight;color: #bd8b97;position: absolute; top: 40%;}
     @media (max-width:1625px) {
         .BookBtn {font-size: 23px; width: 125px; height: 125px;}
+        .ContentHome {font-size: 23px;}
+        .SwampLive {width: 550px;}
+        .Tag {font-size: 32px;}
     }
     @media (max-width:1300px) {
         .BookBtn {right: 50px;font-size: 21px; width: 110px; height: 110px;}
+        .HomeReview {font-size: 15px;}
+        .HomeReview img {height: 30px;}
         .SignUp form input {font-size: 23px; width: 180px;}
+        .SwampLive {top: 3%; width: 500px;}
         .SwampLogo img {width: 150px;}
+        .Tag {font-size: 27px;}
     }
     @media (max-width:1100px) {
-        .Content {margin: 132px auto 100px;}
+        .Home {grid-template-columns: 1fr 30% 1fr;}
+        .HomeDates {font-size: 20px;}
+        .HomeReview {font-size: 13px;}
+        .HomeReview img {height: 27px;}
+        .SwampLive {top: 2%;}
+        .Tag {font-size: 23px;}
     }
     @media (max-width: 1050px) and (orientation: landscape) {
-        
+        .Home {grid-template-columns: 1fr 43% 1fr;}
+        .HomeReview {font-size: 12px;}
+        .Tag {font-size: 21px;}
     }
     @media (max-width:900px) {
         .Content {margin: 65px auto 100px;}
         .Desktop {display: none;}
+        .HomeDates {font-size: 15px;bottom: -3px;}
+        .HomeReview { bottom: 5vh;}
         .Left {left: 0;}
         .Right {right: 0;}
+        .SwampLive {top: 24px; width: 470px;}
+        .Tablet {display: block;background-size: 427px; height: 590px; background-position: top -40px center; top: -17px;}
+        .Tablet div {position: relative; }
+        .Tag {position: absolute!important; bottom: 17vh;}
+        .Tag, .HomeReview {height: fit-content;width: 50%; padding: 0 2.5%; display: inline-block; margin-bottom: 20px;}
     }
     @media (max-width: 850px) and (orientation: landscape) {
         .BookBtn {width: 75px; height: 75px; font-size: 15px; top: 10px; right: 26px;}
+        .ContentHome {font-size: 18px;}
         .fa {font-size: 20x;padding: 2px; margin: 5px -6px;}
         .FooterNew {font-size: 16px;}
+        .HomeReview {font-size: 10px;}
         .nav-item {width: 75%; margin: 0 auto;}
         .nav-item:nth-child(2) {border-top: #bd8b97 solid 2px; border-bottom: #bd8b97 solid 2px;}
         .nav-menu {background-color: #a7cecd; width: 100%; left: -7px; height: 100vh; justify-content: center}
@@ -91,12 +120,18 @@
         .SignUp {font-size: 14px;padding: 30px 15px;}
         .SignUp form input {font-size: 18px; width: 155px;padding: 9px;}
         .SignUp form input[type=submit] {display: block; margin: 20px auto 0px;}
+        .SwampLive {top: 4px; width: 370px;}
+        .Tablet {background-size: contain;padding-top: 0;background-position: top center;}
+        .Tag {font-size: 17px;position: absolute!important; bottom: 37vh;}
+        .Tag, .HomeReview {width: 37%;padding: 0;height: auto;}
+        .TrailerBox span {font-size: 35px;}
 }
     @media (max-width:750px) {
         .BookBtn {right: 22px;font-size: 15px; width: 80px; height: 80px;top: 15px;}
         .Content {margin: 75px auto 100px; width: 90%;}
         .fa {margin: -12px 2px;}
-        .Left, .Right {width: 100%;}
+        .Home {width: 99%;}
+        .HomeReview {font-size: 12px;}
         .nav-item {width: 75%; margin: 0 auto;}
         .nav-item:nth-child(2) {border-top: #bd8b97 solid 2px; border-bottom: #bd8b97 solid 2px;}
         .nav-menu {background-color: #a7cecd; width: 100%; left: -7px; height: 100vh; justify-content: center}
@@ -104,30 +139,51 @@
         .SignUp {font-size: 16px;padding: 30px 15px;}
         .SignUp form input {font-size: 18px; width: 155px;padding: 9px;}
         .SignUp form input[type=submit] {display: block; margin: 20px auto 0px;}
+        .SwampLive {width: 430px; top: 10px;}
+        .Tag {font-size: 20px;bottom: 14vh;}
+        .Tag, .HomeReview {width: 49%;}
+        .TrailerBox span {font-size: 35px;}
     }
     @media (max-width:600px) {
         .BookBtn {right: 18px; font-size: 12px; width: 70px; height: 70px; top: 6px;}
         .Content {margin: 38px auto 60px;}
+        .HomeDates {width: 95%;}
+        .HomeReview {margin-top: 20px;}
+        .ContentHome {width: 90%; font-size: 17px;}
         .FooterNew {display: block;}
         .FooterNew div {width: 100%; margin: 10px auto; text-align: center;}
+        .FooterNew .Menu ul {text-align: center;}
+        .HomeReview br {content: "";}
+        .HomeReview br:after {content: " ";}
         .Mobile {display: block!important;}
         .navbar {padding: 0.5rem;}
         .Review br {content: "";}
         .Review br:after {content: " ";}
+        .SwampLive {width: 310px;}
         .SwampLogo {display: none;}
-        .Tablet {background-size: auto 75vh; padding-top: 63vh;}
+        .Tablet {background-size: auto 66vh; padding-top: 54vh;}
+        .Tag, .HomeReview {width: 100%; display: block;bottom: auto;position: relative!important;}
+        .TrailerBox span {font-size: 26px;}
     }
     @media (max-width: 600px) and (orientation: landscape) {
         .bar {width: 30px; height: 2px;}
         .BookBtn {width: 70px; height: 70px; font-size: 13px;}
+        .HomeReview {font-size: 12px;}
+        .SwampLive {width: 320px;}
+        .Tag, .HomeReview {width: 41%;}
     }
     @media (max-width:450px) {
         .bar {background-color: #000000; width: 29px; height: 2px; margin: 6px auto;}
         .BookBtn {left: 0; top: 0; width: 100%; border-radius: 0; height: fit-content; padding: 13px; font-size: 17px;}
         .hamburger.active .bar:nth-child(1) {transform: translateY(5px) rotate(45deg);}
+        .HomeDates {bottom: 30px;}
         .navbar {padding: 0.5rem 1rem;}
         .SignUp form input {width: 80%;}
         .Social {margin: 30px auto;}
+        .SwampLive {width: 90%; top: 47px;}
+        .Tablet {top: 26px;}
+        .Tag {font-size: 17px;}
+        .TrailerBox span {font-size: 22px;}
     }
     
 </style>
@@ -149,9 +205,6 @@
                     <a href="/reviews" class="nav-link">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/location" class="nav-link">Location</a>
-                </li>
-                <li class="nav-item">
                     <a href="/creative" class="nav-link">Creative</a>
                 </li>
             </ul>
@@ -159,12 +212,13 @@
 </div>
 
 
-<div class="Content">
-    <div class="PageTitle">Book Tickets</div>
-    <div class="Left"><h3>Book now to experience The Drop</h3><h3>Limited tickets available from 2nd September to 14th October.</h3><h3>Prices start from £29.95 per ticket.</h3></div><div class="Right"><iframe src="https://app.squarespacescheduling.com/schedule.php?owner=23481697&location=Hopkins%20Stearne" title="Schedule Appointment" width="100%" height="800" frameBorder="0"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script></div>
-</div>
-<div class="SignUp">
-    Sign up to our mailing list to be the first to hear about Swamp Motel games and experiences, offers, and more
+<a href="/tickets"><div class="BookBtn">Book Tickets</div></a>
+<img class="SwampLive" src="https://static1.squarespace.com/static/60a7b4cb67fec93537be6440/t/60faee9fea601c43f55df8e0/1627057823625/SwampExperience.png">
+<div class="Home Desktop"></div>
+
+<div class="Home Tablet"></div>
+
+<div class="Content"><h3>Tickets will be limited. Sign up to be the first to hear.</h3>
     <!-- Begin Mailchimp Signup Form -->
 <form action="https://swampmotel.us19.list-manage.com/subscribe/post?u=048a26927edde2aafab94f3d8&amp;id=bde837d9ab" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mce-responses">
@@ -179,13 +233,13 @@
         <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" >
     </div>
 </form>
+</div>
 
-<!--End mc_embed_signup-->
-</div>
-<div class="FooterNew"><div class="SwampLogo"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+<div class="FooterNew"><div class="SwampLogo"><a href="https://swampmotel.co.uk/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
     <div class="Menu"><ul><a href="/corporate"><li>Corporate</li></a><a href="/privacy-policy"><li>Privacy Policy</li></a><a href="media"><li>Media Enquiries</li></a></ul></div>
-    <div class="Social"><a href="https://twitter.com/swampmotel" class="fa fa-twitter"></a><a href="https://www.instagram.com/swamp_motel/" class="fa fa-instagram"></a><a href="https://www.facebook.com/swampmotellondon/" class="fa fa-facebook"></a></div><div class="SwampLogo Mobile"><a href="https://swampmotel.co.uk/" target="_self"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
+    <div class="Social"><a href="https://twitter.com/swampmotel" class="fa fa-twitter" target="_blank"></a><a href="https://www.instagram.com/swamp_motel/" target="_blank" class="fa fa-instagram"></a><a href="https://www.facebook.com/swampmotellondon/" target="_blank" class="fa fa-facebook"></a></div><div class="SwampLogo Mobile"><a href="https://swampmotel.co.uk/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/608a82d0d23aa642eec8420f/1623929645520-XJRNWRKWW3TK2AMW3Y1H/image-asset.png"></a></div>
 </div>
+
 <script>const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
